@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Linear {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         //1
         System.out.println("1." + System.lineSeparator() + "Please enter three numbers for the calculation");
@@ -15,7 +16,7 @@ public class Linear {
         System.out.printf("%.2f", meaning);
 
         //2
-        System.out.println(System.lineSeparator() +System.lineSeparator()  +"2." + System.lineSeparator() + "Please enter three numbers for the calculation");
+        System.out.println(System.lineSeparator() + System.lineSeparator() + "2." + System.lineSeparator() + "Please enter three numbers for the calculation");
         a = scanner.nextDouble();
         b = scanner.nextDouble();
         c = scanner.nextDouble();
@@ -28,7 +29,7 @@ public class Linear {
         }
 
         //3
-        System.out.println(System.lineSeparator() +System.lineSeparator() +"3." + System.lineSeparator() + "Please enter two numbers for the calculation");
+        System.out.println(System.lineSeparator() + System.lineSeparator() + "3." + System.lineSeparator() + "Please enter two numbers for the calculation");
         a = scanner.nextDouble();
         b = scanner.nextDouble();
         meaning = (Math.sin(a) + Math.cos(b)) / (Math.cos(a) - Math.sin(b)) * Math.tan(a * b);
@@ -40,7 +41,7 @@ public class Linear {
         }
 
         //4
-        System.out.println(System.lineSeparator() +System.lineSeparator() +"4." + System.lineSeparator() + "Please enter a number nnn,ddd");
+        System.out.println(System.lineSeparator() + System.lineSeparator() + "4." + System.lineSeparator() + "Please enter a number nnn,ddd");
         a = scanner.nextDouble();
         if (Double.toString(a).matches("\\d{3}\\.\\d{3}")) {
             int firstPart = (int) a;
@@ -52,7 +53,7 @@ public class Linear {
         }
 
         //5
-        System.out.println(System.lineSeparator() +System.lineSeparator() +"5." + System.lineSeparator() + "Please enter time in seconds");
+        System.out.println(System.lineSeparator() + System.lineSeparator() + "5." + System.lineSeparator() + "Please enter time in seconds");
         int timeInSec = scanner.nextInt();
         int sec = timeInSec % 60;
         int min = (timeInSec / 60) % 60;
